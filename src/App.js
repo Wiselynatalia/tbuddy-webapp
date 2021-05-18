@@ -14,6 +14,8 @@ import PreLoginPage from "./components/pages/PreLoginPage";
 import Amplify, {Auth} from "aws-amplify"; 
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
+import { withAutheticator } from "@aws-amplify/ui-react"
+export default withAutheticator(App)
 
 
 const App = () => {
