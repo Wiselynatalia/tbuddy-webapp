@@ -11,6 +11,10 @@ import HotelPage from "./components/pages/HotelPage";
 import PreLoginPage from "./components/pages/PreLoginPage";
 
 // Insert AWS Amplify import statements here
+import Amplify, {Auth} from "aws-amplify"; 
+import awsExports from "./aws-exports";
+Amplify.configure(awsExports);
+
 
 const App = () => {
   return (
